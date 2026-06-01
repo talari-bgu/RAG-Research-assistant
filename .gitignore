@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+__pycache__/
+
+# Local environment variables / credentials
+.env
+
+# System and IDE noise
+.DS_Store
+Thumbs.db
+.cursor/
