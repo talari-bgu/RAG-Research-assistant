@@ -147,12 +147,6 @@ Interactive API docs are available at `http://localhost:8000/docs`.
 
 ---
 
-
-## Adding Images to This README
-
-Place screenshots or diagrams in the `assets/` folder and reference them like this:
-
-```markdown
 ![Description](assets/mainscreen.png)
-```
+
 
