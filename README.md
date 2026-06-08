@@ -11,30 +11,30 @@ Chat with a collection of PDFs using Retrieval-Augmented Generation (RAG). Uploa
 
 ```
 ┌─────────────────────── INGEST ────────────────────────┐
-│                                                        │
+│                                                       │
 │  PDF files  →  LangChain loader  →  text chunks       │
-│                   (512 tokens, 64 overlap)             │
+│                   (512 tokens, 64 overlap)            │
 │                           │                           │
-│                   Cohere Embeddings                    │
-│                    (embed-english-v3.0)                │
+│                   Cohere Embeddings                   │
+│                    (embed-english-v3.0)               │
 │                           │                           │
-│                   Pinecone Vector DB  ←── stored       │
-└────────────────────────────────────────────────────────┘
+│                   Pinecone Vector DB  ←── stored      │
+└───────────────────────────────────────────────────────┘
 
 ┌─────────────────────── QUERY ─────────────────────────┐
-│                                                        │
+│                                                       │
 │  User question  →  Cohere Embeddings                  │
 │                           │                           │
-│              Pinecone similarity search                │
-│                  (top 10 candidates)                   │
+│              Pinecone similarity search               │
+│                  (top 10 candidates)                  │
 │                           │                           │
-│              Cohere Reranker (rerank-v3.5)             │
-│                  (keeps top 4)                         │
+│              Cohere Reranker (rerank-v3.5)            │
+│                  (keeps top 4)                        │
 │                           │                           │
-│         LangChain RAG prompt + GPT-4o mini             │
+│         LangChain RAG prompt + GPT-4o mini            │
 │                           │                           │
 │                      Answer                           │
-└────────────────────────────────────────────────────────┘
+└───────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -153,6 +153,6 @@ Interactive API docs are available at `http://localhost:8000/docs`.
 Place screenshots or diagrams in the `assets/` folder and reference them like this:
 
 ```markdown
-![Description](assets/your-image.png)
+![Description](assets/mainscreen.png)
 ```
 
